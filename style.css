@@ -1,0 +1,138 @@
+html{
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: Inter, san-serif;
+    color: black;
+    background-color: white;
+}
+h1{
+    margin: 50px;
+    font-size: 50px;
+    font-weight: 800;
+}
+.container{
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+}
+p{
+    font-size: larger;
+    font-weight: 600;
+}
+#submit{
+    font-size: medium;
+    font-weight: bold;
+    height: 40px;
+    width: 120px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#guess{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 120px;
+}
+#guessField{
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    border: 5px solid #6c6d6d;
+    text-align: center;
+}
+.form{
+    margin: 50px;
+}
+.guesses {
+    background-color: #37ff00;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 910px) and (min-width: 500px) {
+    h1{
+        margin: 50px;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    p{
+        font-size: medium;
+        font-weight: 600;
+    }
+    #guess{
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 120px;
+    }
+    #guessField{
+        width: 250px;
+        height: 50px;
+        font-size: 30px;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 25px;
+        border: 5px solid #6c6d6d;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 375px) {
+    h1{
+        margin: 50px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    p{
+        font-size: small;
+        font-weight: 600;
+    }
+    #guess{
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 120px;
+    }
+    #guessField{
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 25px;
+        border: 5px solid #6c6d6d;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    h1{
+        margin: 40px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    p{
+        font-size: x-small;
+        font-weight: 600;
+    }
+    #guess{
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 120px;
+    }
+    #guessField{
+        width: 100px;
+        height: 25px;
+        font-size: 25px;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 25px;
+        border: 5px solid #6c6d6d;
+        text-align: center;
+    }
+}
