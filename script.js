@@ -70,7 +70,7 @@ const endGame = () => {
     userInput.value = ''
     userInput.setAttribute('disabled', '')
     p.classList.add('button')
-    p.innerHTML = `<h2 id="newGame">Start new game</h2>`
+    p.innerHTML = `<input type="submit" id="newGame" value="Start New Game">`
     startOver.appendChild(p)
     playGame = false
     newGame()
@@ -89,3 +89,31 @@ const newGame = () => {
         playGame = true;
     });
 }
+
+// Implementing Dark Mode Toggle
+const toggle = document.querySelector('#toggle')
+const body = document.querySelector('body')
+const container = document.querySelector('.container')
+const button = document.querySelector('#submit')
+const guesses = document.querySelector('.guesses')
+const newButton = document.querySelector('#newGame')
+
+toggle.addEventListener('click', () => {
+    if (toggle.checked) {
+        body.style.backgroundColor = 'black'
+        body.style.color = 'white'
+        button.style.backgroundColor = 'white'
+        button.style.color = 'black'
+        guesses.style.color = 'black'
+        newButton.style.backgroundColor = 'white'
+        newButton.style.color = 'black'
+    }
+    else {
+        body.style.backgroundColor = 'white'
+        body.style.color = 'black'
+        button.style.backgroundColor = 'black'
+        button.style.color = 'white'
+        newButton.style.backgroundColor = 'black'
+        newButton.style.color = 'white'
+    }
+})
